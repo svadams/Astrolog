@@ -63,16 +63,16 @@
 ** can be disabled even if you are running a system that supports X windows.
 */
 
-//#define PC /* Comment out this #define if you have a Unix, Mac, or other */
+#define PC /* Comment out this #define if you have a Unix, Mac, or other */
            /* system that isn't a generic PC running DOS or MS Windows.  */
 
 //#define MACOLD /* Comment out this #define if you're not compiling for an  */
                /* old pre-OSX Mac. Modern Mac systems should not use this. */
 
-#define X11 /* Comment out this #define if you don't have X windows, or */
+//#define X11 /* Comment out this #define if you don't have X windows, or */
             /* else have them and don't wish to compile in X graphics.  */
 
-//#define WIN /* Comment out this #define if you don't have MS Windows, or */
+#define WIN /* Comment out this #define if you don't have MS Windows, or */
             /* else have them but want a command line version instead.   */
 
 //#define MACG /* Comment out this #define if you don't have a Mac, or else  */
@@ -162,7 +162,7 @@
 #ifndef PC
 #define DEFAULT_DIR "~/astrolog"
 #else
-#define DEFAULT_DIR "C:\\Astrolog"
+#define DEFAULT_DIR "C:\\Users\\Sam\\Astrology\\Astrolog"
 #endif
   // Change this string to directory path program should look in for the
   // astrolog.as default file, if one is not in the executable directory, the
